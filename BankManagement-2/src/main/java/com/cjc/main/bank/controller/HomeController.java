@@ -30,6 +30,7 @@ public class HomeController {
 	@PostMapping("/addAccount")
 	public String addUser(@RequestBody() Account a)
 	{
+		System.out.println(",,,,,,,");
 		hs.saveAccount(a);
 		return "data added";
 	}
